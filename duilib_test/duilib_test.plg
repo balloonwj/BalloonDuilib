@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: duilib_test - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC6.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/duilib_test.pch" /YX"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\TEST_PROJECTS\duilib_test\ButtonTab.cpp"
+"E:\TEST_PROJECTS\duilib_test\DialogBuilderCallbackEx.cpp"
+"E:\TEST_PROJECTS\duilib_test\DuiDialog.cpp"
+"E:\TEST_PROJECTS\duilib_test\duilib_test.cpp"
+"E:\TEST_PROJECTS\duilib_test\MainDialog.cpp"
+"E:\TEST_PROJECTS\duilib_test\stdafx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/duilib_test.pdb" /debug /machine:I386 /out:"Debug/duilib_test.exe" /pdbtype:sept 
+.\Debug\ButtonTab.obj
+.\Debug\DialogBuilderCallbackEx.obj
+.\Debug\DuiDialog.obj
+.\Debug\duilib_test.obj
+.\Debug\MainDialog.obj
+.\Debug\stdafx.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC7.tmp"
+<h3>Output Window</h3>
+Compiling...
+ButtonTab.cpp
+e:\duilib\duilib\uimanager.h(371) : warning C4251: 'm_DefaultFontInfo' : struct 'DuiLib::tagTFontInfo' needs to have dll-interface to be used by clients of class 'DuiLib::CPaintManagerUI'
+        e:\duilib\duilib\uimanager.h(86) : see declaration of 'tagTFontInfo'
+e:\duilib\duilib\uilist.h(196) : warning C4251: 'm_ListInfo' : struct 'DuiLib::tagTListInfoUI' needs to have dll-interface to be used by clients of class 'DuiLib::CListUI'
+        e:\duilib\duilib\uilist.h(15) : see declaration of 'tagTListInfoUI'
+e:\duilib\duilib\uicombo.h(117) : warning C4251: 'm_ListInfo' : struct 'DuiLib::tagTListInfoUI' needs to have dll-interface to be used by clients of class 'DuiLib::CComboUI'
+        e:\duilib\duilib\uilist.h(15) : see declaration of 'tagTListInfoUI'
+DialogBuilderCallbackEx.cpp
+DuiDialog.cpp
+duilib_test.cpp
+MainDialog.cpp
+stdafx.cpp
+Linking...
+ButtonTab.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall DuiLib::CControlUI::SetTag(unsigned long)" (?SetTag@CControlUI@DuiLib@@UAEXK@Z)
+ButtonTab.obj : error LNK2001: unresolved external symbol "public: virtual unsigned long __thiscall DuiLib::CControlUI::GetTag(void)const " (?GetTag@CControlUI@DuiLib@@UBEKXZ)
+Debug/duilib_test.exe : fatal error LNK1120: 2 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+duilib_test.exe - 3 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

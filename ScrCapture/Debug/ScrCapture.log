@@ -1,0 +1,8 @@
+﻿  StdAfx.cpp
+  Util.cpp
+  ScrCaptureWnd.cpp
+  CanvasContainer.cpp
+  Canvas.cpp
+  App.cpp
+  Generating Code...
+  ScrCapture.vcxproj -> F:\mycode\duilib-master\ScrCapture\..\bin\ScrCapture.exe

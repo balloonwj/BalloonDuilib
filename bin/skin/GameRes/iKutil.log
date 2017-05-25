@@ -1,0 +1,2 @@
+[2017-3-31 10:33:28][iKUtil64.dll]f:[dllmain.cpp]l:54-->DLL_PROCESS_ATTACH
+[2017-3-31 10:33:28][iKUtil64.dll]f:[dllmain.cpp]l:38-->[curproc]C:\windows\system32\NOTEPAD.EXE
